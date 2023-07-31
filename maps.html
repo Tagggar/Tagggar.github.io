@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html class="maps">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maps App & Carplay</title>
+  <meta name="description" content="Maps App & Carplay">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap">
+
+</head>
+<body>
+  <header>    
+    <a href="home.html"><button onclick="scrollToProjects()">Home</button></a>
+    <nav class="nav home">
+      <button onclick="window.open('https://u24.gov.ua/')">Support</button>
+      <button class="ua" id="ua" onclick="window.open('https://u24.gov.ua/')"></button>
+    </nav>
+        
+  </header>
+
+  <div class="preview">
+    <img src="./img/map_ios_routes.png"> 
+    <img src="./img/map_ios_nav.png"> 
+    <img src="./img/map_ios_stop.png">
+    <img src="./img/map_ios_gas.png">
+  </div>
+
+  <main>    
+    <h1 class="title">Maps App & Carplay</h1>
+    <p>
+      In today's fast-paced world, navigation apps have become an essential tool for millions of users worldwide. However, the usability of modern navigation apps for both iOS and Android platforms has been a significant concern due to their complex and inconsistent user interface (UI) and an unpleasant user experience (UX). 
+ This case study delves into the pain points faced by users and proposes a new UI approach to enhance the usability of maps applications. 
+    </p>
+
+    <div class="tags">
+      <span>Case Study</span>
+      <span>Maps</span>
+      <span>Navigation</span>
+      <span>iOS App</span>
+      <span>Carplay</span>
+      <span>2023</span>
+      <span>2 min</span>
+    </div>
+  </main>
+
+  <section>
+    <h2 class="title">Current Situation</h2>
+    <p>Google Maps is a leading provider of digital mapping services available in over 220 countries and territories. It offers accurate, real-time directions and information about businesses and attractions, making it one of the most widely used mapping applications globally, with over 1 billion monthly active users. Google Maps provides turn-by-turn navigation, live traffic updates, and local business information to help people get around conveniently. Its goal is to simplify exploration and navigation worldwide, making it easier for users to discover new places, plan trips, and access information.
+        <br>Now overloaded app with distractions and unnecessary information, resulting in a cluttered interface and frustrating user experience:
+    </p>
+    <li>
+      <img class="icon" src="./img/Bad.png">
+      <p>Complex and Inconsistent UI: The lack of a standardized UI across navigation apps confuses users who switch between different platforms. This inconsistency hampers the overall user experience and increases the learning curve.</p>
+    </li>
+    <li>
+      <img class="icon" src="./img/Bad.png">
+      <p>Distractions and Unnecessary Information: Overloading the app with irrelevant information, such as excessive icons, buttons, and data, distracts users from their primary task of finding directions. </p>
+    </li>
+    <li>
+      <img class="icon" src="./img/Bad.png">
+      <p>Too Many Functionalities: While navigation apps offer various features, presenting all functionalities simultaneously can be overwhelming. Users may struggle to identify and access the features they need urgently, leading to suboptimal user experience.</p>
+    </li>
+  </section>
+
+  <section>
+    <h3 class="title">Proposed Solution </h3>
+    <p>To overcome the existing challenges and enhance maps app usability, a new UI approach is needed. The following strategies are recommended:</p>
+    <li>
+      <img class="icon" src="./img/It.png">
+      <p>Streamlined and Consistent UI Design will improve user familiarity and ease of use. Implementing common UI components, intuitive icons, and standardized navigation patterns will create a seamless experience for users</p>
+    </li>
+    <li>
+      <img class="icon" src="./img/It.png">
+      <p>User-Centric Information Display: Reducing distractions and displaying only essential information based on the user's context and preferences will make the app more user-centric. Implementing smart filters and personalized settings will ensure users receive the most relevant information.</p>
+    </li>
+    <li>
+      <img class="icon" src="./img/It.png">
+      <p>Progressive Functionality Disclosure: Instead of overwhelming users with all functionalities upfront, implement a progressive disclosure approach. This involves revealing features gradually as users explore the app, allowing them to learn and adapt to the app's capabilities at their own pace.</p>
+    </li>
+
+  </section>
+
+  <section>    
+    <section class="row">
+
+      <section class="📱">
+        <img src="./img/map_ios_routes.png"> 
+      </section>
+
+      <section>
+        <h6 class="title">Routes</h6>
+        <li>        
+          <p>The navigation UI should be as simple as possible. The less time the user spends understanding its functionality, the better. Here, the rule "less is more" applies.
+
+          </p>                        
+        </li>
+        <p>OpenStreetMaps allows customization of display settings. Here, only roads suitable for your vehicle are shown. Three route options are suggested:</p>
+        <li>
+          <img class="icon" src="./img/It.png">
+          <p>Fastest</p>
+        </li>
+        <li>
+          <img class="icon" src="./img/It.png">
+          <p>Shortest</p>
+        </li>
+        <li>
+          <img class="icon" src="./img/It.png">
+          <p>Optimal route - considering time, distance, traffic, traffic lights, and turns</p>
+        </li>
+        
+        <li>
+          <img class="icon" src="./img/Ruler.png">
+          <p>The map is centered on the North when a route is planned. To select a route, tap on the route line.</p>
+        </li>
+      </section>
+    </section>
+  </section>
+
+  <section>    
+    <section class="row">
+
+      <section class="📱">
+        <img src="./img/map_ios_nav.png"> 
+      </section>
+      
+      <section>
+        <h6 class="title">Navigation</h6>         
+        <p>The main screen contains only essential components:</p>                        
+
+        <li>
+          <img class="icon" src="./img/It.png">
+          <p>Nav Directions: Provides navigation guidance with lane information and distance to the desired exit.</p>
+        </li>
+
+        <li>
+          <img class="icon" src="./img/It.png">
+          <p>90: speed limit on the current road, much more useful for the driver than the speedometer (which is already on car's dashboard).</p>
+        </li>
+
+        <li>
+          <img class="icon" src="./img/Ads.png">
+          <p>Only essential points of interest like road repairs, cameras, gas stations, and parking are shown on the route. More details can be set in the settings.</p>
+        </li>
+
+        <li>
+          <img class="icon" src="./img/It.png">
+          <p>Nav Menu: Displays remaining distance, estimated travel time, and expected arrival time at the destination. Tapping opens the "Add Stop" menu.</p>
+        </li>
+
+      </section>
+    </section>
+  </section>
+
+  <section>    
+    <section class="row">
+
+      <section class="📱">
+        <img src="./img/map_ios_stop.png"> 
+      </section>
+      
+      <section>
+        <h6 class="title">Add Stop </h6>
+     
+          <p>The Add Stop menu includes:</p>                        
+
+        <li>
+          <img class="icon" src="./img/Search.png">
+          <p>search box for entering queries (text or speech)</p>
+        </li>
+        <li>
+          <img class="icon" src="./img/It.png">
+          <p>Search Categories, based on the chosen navigation mode: Car / Public Transport / Bicycle, or Walking</p>
+        </li>
+        <li>
+          <img class="icon" src="./img/It.png">
+          <p>History Suggestions: Shows previous search queries.</p>
+        </li>
+        <li>
+          <img class="icon" src="./img/It.png">
+          <p>In the settings, you can specify the vehicle type, fuel types, and preferred route preferences. For example, you can choose to show only gas stations with A95 fuel and/or hide electric and diesel stations.</p>
+        </li>
+
+      </section>
+    </section>
+  </section>
+
+  <section>    
+    <section class="row">
+
+      <section class="📱">
+        <img src="./img/map_ios_gas.png"> 
+      </section>
+      
+      <section>
+        <h6 class="title">Stop Options</h6>
+        <p>Options Selection along the route:</p>
+        <li>
+          <img class="icon" src="./img/It.png">
+          <p>Initially, the nearest point along the route is selected.
+          </p>
+        </li>
+
+        <li>
+          <img class="icon" src="./img/It.png">
+          <p>In this showcase, the gas station displays the brand and price for the fuel type, specified in the settings.</p>
+        </li>
+
+        <li>
+          <img class="icon" src="./img/It.png">
+          <p>Options = 100% relevant advertising shown to the consumer ready to make a purchase. Show prices at gas stations for drivers to refuel. Such ads are non-intrusive and highly effective.</p>
+        </li>
+
+      </section>
+    </section>
+  </section>
+
+ 
+  <section>
+    <h6 class="title">Carplay</h6>
+
+    <p>In CarPlay, the UI/UX is maximally preserved for seamless transition</p>
+    <img src="./img/Carplay.png"> 
+
+  </section>
+
+
+
+  <section>
+    <h7 class="title">Conclusion </h7>
+    <p>Enhancing maps app usability is crucial to provide users with an enjoyable and efficient navigation experience. By addressing the pain points of complex UI, distractions, and excessive functionalities, the proposed new UI approach aims to improve the overall usability of navigation apps for all platforms, ultimately leading to higher user satisfaction and increased app engagement.</p>
+
+  </section>
+
+
+
+  <section id="Projects">
+    <h4 class="title">Projects:</h4>
+    <section class="row">
+
+      <section>
+        <a href="shop.html" class="card shop">
+          <img class="preview" alt="" src="./img/shop_ios.png">          
+          <p class="title">Cleen™️ Web Store</p>
+          <div class="tags">
+            <span>Case Study</span>
+            <span>E-Commerce</span>
+            <span>Shop</span>
+            <span>iOS App</span>
+            <span>Web</span>
+            <span>2023</span>
+            <span>2 min</span>
+          </div>
+        </a>
+
+        <a href="maps.html" class="card maps">
+          <img class="preview" alt="" src="./img/map_ios.png">
+          <p class="title">Maps App & Carplay</p>
+          <div class="tags">
+            <span>Case Study</span>
+            <span>Maps</span>
+            <span>Navigation</span>
+            <span>OpenStreetMap</span>
+            <span>iOS App</span>
+            <span>Carplay</span>
+            <span>2023</span>
+            <span>2 min</span>
+          </div>          
+        </a>
+        <!-- Add cards -->
+      </section>
+
+      <section>
+        <a href="strm.html" class="card strm">
+          <img class="preview" alt="" src="./img/s_ios.png" style="filter: drop-shadow(-16px 8px 8px rgba(0, 0, 0, 0.3));">          
+          <p class="title">Ai Search Engine 検索</p>
+          <div class="tags">
+            <span>Preview</span>
+            <span>Ai</span>
+            <span>Search Engine</span>
+            <span>2022</span>
+            <span>Web</span>
+            <span>iOS App</span>            
+            <span>Desktop</span>            
+            <span>1 min</span>
+          </div>
+        </a>
+
+        <a href="firefox.html" class="card ff">
+          <img src="./img/firefox.png">          
+          <p class="title">Firefox Browser CSS</p>
+          <div class="tags">
+            <span>Release</span>
+            <span>CSS</span>
+            <span>Desktop</span>
+            <span>Browser</span>
+            <span>Web</span>
+            <span>2023</span>
+            <span>2 min</span>
+          </div>
+        </a>
+        <!-- Add cards -->
+      </section>
+    </section>
+    </section> 
+  </section><!-- Projects -->
+ 
+
+  <footer>
+    <button disabled>© 2023 Semyon Taggar. All rights reserved.</button>
+    <button onclick="window.location.href = 'mailto:taggarx@gmail.com'">Email</button>
+    <button onclick="window.open('https://t.me/Tagggar')">Telegram</button>
+    <button onclick="window.open('https://u24.gov.ua/')">Github</button>
+    <button onclick="window.open('https://u24.gov.ua/')">Support</button>
+    <button class="ua" id="ua" onclick="window.open('https://u24.gov.ua/')"></button>
+  </footer>
+
+<script>
+  function scrollToProjects() {
+    const projectsSection = document.getElementById('Projects');
+    projectsSection.scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>
