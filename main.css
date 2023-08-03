@@ -108,19 +108,24 @@ img.icon {
   max-width: 240px;
 }
 
+
+.preview {
+  display: -webkit-flex; /* Add vendor prefix */
+  display: flex;
+  -webkit-max-width: 800px; /* Add vendor prefix */
+  max-width: 800px;
+  -webkit-justify-content: center; /* Add vendor prefix */
+  justify-content: center;
+  -webkit-align-items: flex-start; /* Add vendor prefix */
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+
 @media (max-width: 768px) {
   .📱 {
     width: 100%;
   }
-}
-
-.preview {
-  display: flex;
-  max-width: 800px;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 24px;
-  align-self: stretch;
 }
 
 /* Buttons ======================================= */
