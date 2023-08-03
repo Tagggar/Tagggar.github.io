@@ -120,7 +120,7 @@ img.icon {
 
 .preview {
   display: flex;
-  max-width: 800px;
+  width: clamp(200px, 90%, 720px);
   justify-content: center;
   align-items: flex-start;
   gap: 24px;
