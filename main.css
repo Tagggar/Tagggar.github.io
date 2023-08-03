@@ -93,8 +93,8 @@ footer {
 }
 
 img {
-  max-width: 100%; /* Make sure images don't exceed the width of the container */
-  height: auto; /* Maintain the aspect ratio of the images */
+  height: 100%;
+  width: 100%;
 }
 
 img.icon {
@@ -108,18 +108,19 @@ img.icon {
   max-width: 240px;
 }
 
-
-.preview {
-  max-width: 100%; /* Allow the container to take up the full width of the viewport */
-  justify-content: center;
-  align-items: flex-start;
-  gap: 24px;
-}
-
 @media (max-width: 768px) {
   .📱 {
     width: 100%;
   }
+}
+
+.preview {
+  display: flex;
+  max-width: 800px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
 }
 
 /* Buttons ======================================= */
