@@ -93,8 +93,8 @@ footer {
 }
 
 img {
-  height: 100%;
-  width: 100%;
+  max-width: 100%; /* Make sure images don't exceed the width of the container */
+  height: auto; /* Maintain the aspect ratio of the images */
 }
 
 img.icon {
@@ -110,16 +110,10 @@ img.icon {
 
 
 .preview {
-  display: -webkit-flex; /* Add vendor prefix */
-  display: flex;
-  -webkit-max-width: 800px; /* Add vendor prefix */
-  max-width: 800px;
-  -webkit-justify-content: center; /* Add vendor prefix */
+  max-width: 100%; /* Allow the container to take up the full width of the viewport */
   justify-content: center;
-  -webkit-align-items: flex-start; /* Add vendor prefix */
   align-items: flex-start;
   gap: 24px;
-  align-self: stretch;
 }
 
 @media (max-width: 768px) {
