@@ -1,247 +1,311 @@
 <!DOCTYPE html>
 <html class="strm">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hi, I’m Semyon Taggar</title>
-  <meta name="description" content="Product Designer UX + UI, making the web better by developing clean and super-intuitive products that fulfill the business mission.">
-  <link rel="stylesheet" href="./main.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UI Element</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      // Load sections using jQuery
+      $(document).ready(function () {
+        $("#navContainer").load("sec.html header");
+        $("#projectsContainer").load("sec.html #projects");
+        $("#footerContainer").load("sec.html footer");
+      });
+    </script>
+    <meta
+      name="description"
+      content="Product Designer UX + UI, making the web better by developing clean and super-intuitive products that fulfill the business mission."
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./var.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><button onclick="scrollToProjects()">Home</button></a
+      >
+      <nav class="nav home">
+        <button onclick="window.open('https://u24.gov.ua/')">Support</button>
+        <button
+          class="ua"
+          id="ua"
+          onclick="window.open('https://u24.gov.ua/')"
+        ></button>
+      </nav>
+    </header>
 
-</head>
-<body>
-  <header>    
-    <a href="index.html"><button onclick="scrollToProjects()">Home</button></a>
-    <nav class="nav home">
-      <button onclick="window.open('https://u24.gov.ua/')">Support</button>
-      <button class="ua" id="ua" onclick="window.open('https://u24.gov.ua/')"></button>
-    </nav>
-        
-  </header>
-
-  <div class="preview">
-    <img src="./img/s_ios_payopt.png"> 
-    <img src="./img/s_ios_paycard.png"> 
-    <img src="./img/s_ios_chat.png">
-  </div>
-
-  <main>    
-    <h1 class="title">Ai Search Engine</h1>
-    <p>
-      The navigation UI should be as simple as possible. The less time the user spends understanding its functionality, the better. Here, the rule "less is more" applies.
-      
-    </p>
-
-    <li>
-      <img class="icon" src="./img/It.png">
-      <p>упростить восприятие информации за еденицу времени</p>
-    </li>
-    <li>
-      <img class="icon" src="./img/It.png">
-      <p>упразднить отвлекающие факторы;</p>
-    </li>
-    <li>
-      <img class="icon" src="./img/It.png">
-      <p>повысить удобство и простоту использования</p>
-    </li>
-
-    <div class="tags">
-      <span>Case Study</span>
-      <span>Maps</span>
-      <span>Navigation</span>
-      <span>iOS App</span>
-      <span>Carplay</span>
-      <span>2023</span>
-      <span>2 min</span>
+    <div class="preview">
+      <img src="./img/s_ios_payopt.png" />
+      <img src="./img/s_ios_paycard.png" />
+      <img src="./img/s_ios_chat.png" />
     </div>
-  </main>
 
-  <section>
-    <h2 class="title">Current Situation</h2>
-    <p>The client's e-commerce store had a lot of visitors and clicks, but the conversion rate has been dropping for months. The following tasks were set to define and resolve the problems:</p>
-    <li>
-      <img class="icon" src="./img/It.png">
-      <p>Review the current UX design and user interface usability;</p>
-    </li>
-    <li>
-      <img class="icon" src="./img/It.png">
-      <p>Conduct user research and analyze customer behavior data to evaluate the effectiveness of marketing campaigns;</p>
-    </li>
-    <li>
-      <img class="icon" src="./img/It.png">
-      <p>Design new UI (user interface) and improve UX (user experience).</p>
-    </li>
-  </section>
-
-  <section>
-    <h3 class="title">User research, UX research and usability testing</h3>
-    <li>
-      <img class="icon" src="./img/Bad.png">
-      <p><span class="red">28% of customers</span> left the store after adding items to the cart;</p>
-    </li>
-    <li>
-      <img class="icon" src="./img/Bad.png">
-      <p><span class="red">11% of unique visitors left</span> the shop due to long page loading;</p>
-    </li>
-    <li>
-      <img class="icon" src="./img/Bad.png">
-      <p>The product's <span class="red">UI was overloaded</span>, which led to a <span class="red">broken UX</span>;</p>
-    </li>
-        <li>
-      <img class="icon" src="./img/Bad.png">
-      <p>Non-intuitive interactions forced users to take actions by trial and error, trying to complete their tasks;</p>
-    </li>
-  </section>
-
-  <section>
-    <h4 class="title">Data analysis</h4>
-    <p>Confusing first impressions, outdated UX & UI performance with slow loading - caused frustration and customer outflow. Previous UI is under  NDA, but data is open:</p>
-    <li>
-      <img class="icon" src="./img/Charts.png">
-      <p><span class="red">Conversions dropped</span> for over 9 months despite 
-        <span>accurate pricing</span> for the target audience;</p>
-    </li>
-    <li>
-      <img class="icon" src="./img/Invader.png">
-      <p>Unoptimized UI elements with heavy scripts <span class="red">reduced performance</span> and made navigation difficult;</p>
-    </li>
-    <li>
-      <img class="icon" src="./img/Ads.png">
-      <p>Annoying pop-ups and notifications drove away <span class="red">22%</span> of customers.</p>
-    </li>
-    
-  </section>
-
-  <section>
-    <h5 class="title">Prototyping and Final Design</h5>
-    <li>
-      <p>Новый UI интерфейс карт призван улучшить пользовательский опыт. 
+    <main>
+      <h1 class="title">UI Elements</h1>
+      <p>
+        The navigation UI should be as simple as possible. The less time the
+        user spends understanding its functionality, the better. Here, the rule
+        "less is more" applies.
       </p>
-    </li>
-    <p>After feedback on Figma prototypes, I created the final design of the lightest version. Below, I will showcase some pages with a simple but functional UI with intuitive  UX.</p>    
-    
-  </section>
-  
-  <section>    
-    <section class="row">
 
-      <section class="📱">
-        <img src="./img/shop_ios_products.png"> 
-      </section>
-      <section>
-        <h6 class="title">Products</h6>
-        <li>        
-          <p>Main Page with infinite scroll. 
-            Nothing more, the products occupy the whole screen. Nice!</p>                        
-        </li>
+      <li>
+        <img class="icon" src="./img/It.png" />
+        <p>упростить восприятие информации за еденицу времени</p>
+      </li>
+      <li>
+        <img class="icon" src="./img/It.png" />
+        <p>упразднить отвлекающие факторы;</p>
+      </li>
+      <li>
+        <img class="icon" src="./img/It.png" />
+        <p>повысить удобство и простоту использования</p>
+      </li>
 
-        <img class="icon" style="height: 24px;" src="./img/Search.svg">
+      <div class="tags">
+        <span>Case Study</span>
+        <span>Maps</span>
+        <span>Navigation</span>
+        <span>iOS App</span>
+        <span>Carplay</span>
+        <span>2023</span>
+        <span>2 min</span>
+      </div>
+    </main>
 
-        <p>Search hides on scroll <span class="red">down</span> and reappears on scroll <span>up</span>;</p>
-        <li>
-          <img class="icon" src="./img/It.png">
-          <p>Logic-based navigation through gestures and browser controls - no need for an additional UI;</p>
-        </li>
-        
-        <li>
-          <img class="icon" src="./img/Ads.png">
-          <p>Ads can be natively placed as items - so users won't be annoyed by pop-ups;</p>
-        </li>
-        <li>
-          <img class="icon" src="./img/Profit.png">
-          <p>Zero distraction, only shopping.</p>
-        </li>
+    <section>
+      <h2 class="title">Current Situation</h2>
+      <p>
+        The client's e-commerce store had a lot of visitors and clicks, but the
+        conversion rate has been dropping for months. The following tasks were
+        set to define and resolve the problems:
+      </p>
+      <li>
+        <img class="icon" src="./img/It.png" />
+        <p>Review the current UX design and user interface usability;</p>
+      </li>
+      <li>
+        <img class="icon" src="./img/It.png" />
+        <p>
+          Conduct user research and analyze customer behavior data to evaluate
+          the effectiveness of marketing campaigns;
+        </p>
+      </li>
+      <li>
+        <img class="icon" src="./img/It.png" />
+        <p>Design new UI (user interface) and improve UX (user experience).</p>
+      </li>
+    </section>
+
+    <section>
+      <h3 class="title">User research, UX research and usability testing</h3>
+      <li>
+        <img class="icon" src="./img/Bad.png" />
+        <p>
+          <span class="red">28% of customers</span> left the store after adding
+          items to the cart;
+        </p>
+      </li>
+      <li>
+        <img class="icon" src="./img/Bad.png" />
+        <p>
+          <span class="red">11% of unique visitors left</span> the shop due to
+          long page loading;
+        </p>
+      </li>
+      <li>
+        <img class="icon" src="./img/Bad.png" />
+        <p>
+          The product's <span class="red">UI was overloaded</span>, which led to
+          a <span class="red">broken UX</span>;
+        </p>
+      </li>
+      <li>
+        <img class="icon" src="./img/Bad.png" />
+        <p>
+          Non-intuitive interactions forced users to take actions by trial and
+          error, trying to complete their tasks;
+        </p>
+      </li>
+    </section>
+
+    <section>
+      <h4 class="title">Data analysis</h4>
+      <p>
+        Confusing first impressions, outdated UX & UI performance with slow
+        loading - caused frustration and customer outflow. Previous UI is under
+        NDA, but data is open:
+      </p>
+      <li>
+        <img class="icon" src="./img/Charts.png" />
+        <p>
+          <span class="red">Conversions dropped</span> for over 9 months despite
+          <span>accurate pricing</span> for the target audience;
+        </p>
+      </li>
+      <li>
+        <img class="icon" src="./img/Invader.png" />
+        <p>
+          Unoptimized UI elements with heavy scripts
+          <span class="red">reduced performance</span> and made navigation
+          difficult;
+        </p>
+      </li>
+      <li>
+        <img class="icon" src="./img/Ads.png" />
+        <p>
+          Annoying pop-ups and notifications drove away
+          <span class="red">22%</span> of customers.
+        </p>
+      </li>
+    </section>
+
+    <section>
+      <h5 class="title">Prototyping and Final Design</h5>
+      <li>
+        <p>Новый UI интерфейс карт призван улучшить пользовательский опыт.</p>
+      </li>
+      <p>
+        After feedback on Figma prototypes, I created the final design of the
+        lightest version. Below, I will showcase some pages with a simple but
+        functional UI with intuitive UX.
+      </p>
+    </section>
+
+    <section>
+      <section class="row">
+        <section class="📱">
+          <img src="./img/s_ios_payopt.png" />
+        </section>
+        <section>
+          <h6 class="title">Payment Options</h6>
+          <li>
+            <p>
+              Main Page with infinite scroll. Nothing more, the products occupy
+              the whole screen. Nice!
+            </p>
+          </li>
+
+          <img class="icon" style="height: 24px" src="./img/Search.svg" />
+
+          <p>
+            Search hides on scroll <span class="red">down</span> and reappears
+            on scroll <span>up</span>;
+          </p>
+          <li>
+            <img class="icon" src="./img/It.png" />
+            <p>
+              Logic-based navigation through gestures and browser controls - no
+              need for an additional UI;
+            </p>
+          </li>
+
+          <li>
+            <img class="icon" src="./img/Ads.png" />
+            <p>
+              Ads can be natively placed as items - so users won't be annoyed by
+              pop-ups;
+            </p>
+          </li>
+          <li>
+            <img class="icon" src="./img/Profit.png" />
+            <p>Zero distraction, only shopping.</p>
+          </li>
+        </section>
       </section>
     </section>
-  </section>
-  
-  <section id="Projects">
-    <h4 class="title">Projects:</h4>
-    <section class="row">
 
-      <section>
-        <a href="shop.html" class="card shop">
-          <img class="preview" alt="" src="./img/shop_ios.png">          
-          <p class="title">Cleen™️ Web Store</p>
-          <div class="tags">
-            <span>Case Study</span>
-            <span>E-Commerce</span>
-            <span>Shop</span>
-            <span>iOS App</span>
-            <span>Web</span>
-            <span>2023</span>
-            <span>2 min</span>
-          </div>
-        </a>
+    <section>
+      <section class="row">
+        <section class="📱">
+          <img src="./img/s_ios_paycard.png" />
+        </section>
+        <section>
+          <h6 class="title">Pay by Card</h6>
+          <li>
+            <p>
+              Main Page with infinite scroll. Nothing more, the products occupy
+              the whole screen. Nice!
+            </p>
+          </li>
 
-        <a href="maps.html" class="card maps">
-          <img class="preview" alt="" src="./img/map_ios.png">
-          <p class="title">Maps App & Carplay</p>
-          <div class="tags">
-            <span>Case Study</span>
-            <span>Maps</span>
-            <span>Navigation</span>
-            <span>OpenStreetMap</span>
-            <span>iOS App</span>
-            <span>Carplay</span>
-            <span>2023</span>
-            <span>2 min</span>
-          </div>          
-        </a>
-        <!-- Add cards -->
-      </section>
+          <img class="icon" style="height: 24px" src="./img/Search.svg" />
 
-      <section>
-        <a href="strm.html" class="card strm">
-          <img class="preview" alt="" src="./img/s_ios.png" style="filter: drop-shadow(-16px 8px 8px rgba(0, 0, 0, 0.3));">          
-          <p class="title">Ai Search Engine 検索</p>
-          <div class="tags">
-            <span>Preview</span>
-            <span>Ai</span>
-            <span>Search Engine</span>
-            <span>2022</span>
-            <span>Web</span>
-            <span>iOS App</span>            
-            <span>Desktop</span>            
-            <span>1 min</span>
-          </div>
-        </a>
+          <p>
+            Search hides on scroll <span class="red">down</span> and reappears
+            on scroll <span>up</span>;
+          </p>
+          <li>
+            <img class="icon" src="./img/It.png" />
+            <p>
+              Logic-based navigation through gestures and browser controls - no
+              need for an additional UI;
+            </p>
+          </li>
 
-        <a href="firefox.html" class="card ff">
-          <img src="./img/firefox.png">          
-          <p class="title">Firefox Browser CSS</p>
-          <div class="tags">
-            <span>Release</span>
-            <span>CSS</span>
-            <span>Desktop</span>
-            <span>Browser</span>
-            <span>Web</span>
-            <span>2023</span>
-            <span>2 min</span>
-          </div>
-        </a>
-        <!-- Add cards -->
+          <li>
+            <img class="icon" src="./img/Ads.png" />
+            <p>
+              Ads can be natively placed as items - so users won't be annoyed by
+              pop-ups;
+            </p>
+          </li>
+          <li>
+            <img class="icon" src="./img/Profit.png" />
+            <p>Zero distraction, only shopping.</p>
+          </li>
+        </section>
       </section>
     </section>
-    </section> 
-  </section><!-- Projects -->
- 
 
-  <footer>
-    <button disabled>© 2023 Semyon Taggar. All rights reserved.</button>
-    <button onclick="window.location.href = 'mailto:taggarx@gmail.com'">Email</button>
-    <button onclick="window.open('https://t.me/Tagggar')">Telegram</button>
-    <button onclick="window.open('https://u24.gov.ua/')">Github</button>
-    <button onclick="window.open('https://u24.gov.ua/')">Support</button>
-    <button class="ua" id="ua" onclick="window.open('https://u24.gov.ua/')"></button>
-  </footer>
+    <section>
+      <section class="row">
+        <section class="📱">
+          <img src="./img/s_ios_chat.png" />
+        </section>
+        <section>
+          <h6 class="title">Chat UI</h6>
+          <li>
+            <p>
+              Main Page with infinite scroll. Nothing more, the products occupy
+              the whole screen. Nice!
+            </p>
+          </li>
 
-<script>
-  function scrollToProjects() {
-    const projectsSection = document.getElementById('Projects');
-    projectsSection.scrollIntoView({ behavior: 'smooth' });
-  }
-</script>
+          <img class="icon" style="height: 24px" src="./img/Search.svg" />
 
-</body>
+          <p>
+            Search hides on scroll <span class="red">down</span> and reappears
+            on scroll <span>up</span>;
+          </p>
+          <li>
+            <img class="icon" src="./img/It.png" />
+            <p>
+              Logic-based navigation through gestures and browser controls - no
+              need for an additional UI;
+            </p>
+          </li>
+
+          <li>
+            <img class="icon" src="./img/Ads.png" />
+            <p>
+              Ads can be natively placed as items - so users won't be annoyed by
+              pop-ups;
+            </p>
+          </li>
+          <li>
+            <img class="icon" src="./img/Profit.png" />
+            <p>Zero distraction, only shopping.</p>
+          </li>
+        </section>
+      </section>
+    </section>
+
+    <div id="projectsContainer"></div>
+    <div id="footerContainer"></div>
+  </body>
 </html>

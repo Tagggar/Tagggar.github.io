@@ -1,0 +1,71 @@
+:root {
+  font-family: "Rubik", sans-serif;
+  font-size: var(--16);
+  background-color: var(--cement);
+  margin: 0 auto;
+  /* font-size: 62.5%; for use rem units (16px = 1.6em)*/
+
+  /* _ */
+
+  ---16: 16px;
+  ---24: 24px;
+
+  /* Colors */
+  --cement: #c5c5c5;
+  --green-0: #dbffe5;
+  --green-1: #daebdf;
+  --green-9: #00574a;
+  --red-9: #4c0a20;
+  --grey-8b: #1f1b2c;
+  --grey-9: #1e1e1e;
+  --green-6: #20c05f;
+  --grey-000: #000;
+  --yellow-5: #ffb800;
+  --blue-8: #0000ff;
+  --color-gainsboro: #d9d9d9;
+  --color-white: #fff;
+  --color-plum: #f8b4e4;
+
+  --orng: #ff9c00;
+
+  --cement: #c5c5c5;
+
+  --neol: #a8f7e5;
+  --neom: #5500ac;
+  --neon: #4a00d8;
+  --neod: #330985;
+
+  --gregr: linear-gradient(70deg, #ccc, #ccc);
+  --map: linear-gradient(70deg, #141e30, #00413b);
+  --neony: linear-gradient(70deg, #3b005f, #4a00d8);
+  --pinky: linear-gradient(70deg, #e3b3d4, #faaca8);
+
+  --grady: linear-gradient(120deg, #ccc, #cfd7d4);
+
+  --shadow: -8px -8px 32px #ffffff20 inset;
+}
+
+:disabled {
+  pointer-events: none;
+}
+
+/* scrollbar 
+:-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border-radius: 16px;
+  border: 4px solid #fff;
+}
+*/
+
+/* Win95
+button {
+  background-color: var(--cement);
+  color: var(--grey-8b);
+  font-size: var(---16);
+  line-height: 150%;
+  font-weight: 500;
+  font-family: var(--body);
+  cursor: pointer;
+  padding: 0 6px;
+  transition: background-color 0.5s, color 0.5s; 
+} */
