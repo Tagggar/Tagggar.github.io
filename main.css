@@ -24,6 +24,10 @@ body {
   gap: 48px;
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
   display: flex;
   flex-direction: row;
