@@ -3,6 +3,7 @@
   font-size: var(--16);
   background-color: var(--cement);
   margin: 0 auto;
+  text-decoration: none;
   /* font-size: 62.5%; for use rem units (16px = 1.6em)*/
 
   /* _ */
