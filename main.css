@@ -93,9 +93,9 @@ footer {
 }
 
 img {
-  width: 100%;
+  max-width: 100%; 
   height: auto;
-  -webkit-appearance: none;
+  display: block; /* Ensure images behave as block-level elements */
 }
 
 
@@ -107,10 +107,13 @@ img.icon {
 }
 
 .preview {
-  display: flex;  
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
   justify-content: center;
   align-items: flex-start;
   gap: 24px;
+  overflow: hidden; /* Hide any potential overflow */
 }
 
 .png {
