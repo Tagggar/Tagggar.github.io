@@ -105,9 +105,7 @@ img.icon {
 }
 
 .preview {
-  display: flex;
-  max-width: 800px;
-  max-height: auto;
+  display: flex;  
   justify-content: center;
   align-items: flex-start;
   gap: 24px;
