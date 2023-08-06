@@ -108,14 +108,15 @@ img {
   justify-content: space-between;
   align-items: center;
   gap: 24px;
-  width: 100%;
-  max-width: 720px; /* Limit the maximum width of the preview container */
+  max-width: 100%;
+  overflow: hidden; /* Prevent horizontal scrolling */
 }
 
-.preview img {
-  flex: 1; /* Each image takes up equal space within the container */
+.card img.preview {
+  width: 100%; /* Full width for the image within the card */
   max-width: 100%;
   height: auto;
+  object-fit: contain; /* Maintain aspect ratio and fit image within container */
 }
 
 .png {
