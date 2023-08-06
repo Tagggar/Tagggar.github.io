@@ -100,19 +100,17 @@ img {
   max-width: 100%;
   height: auto;
   user-select: none;
-  object-fit: contain;
 }
 
 .preview {
   display: flex;
   justify-content: space-between; /* Distribute space evenly between images */
   align-items: center;
+  gap: 24px;
 }
 
 .preview img {
-  width: calc(
-    32% - 8px
-  ); /* Each image takes up one-third of the available width minus gap */
+  flex: 1; /* Each image takes up equal space within the container */
   max-width: 100%;
   height: auto;
 }
