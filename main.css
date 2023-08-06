@@ -100,13 +100,16 @@ img {
   max-width: 100%;
   height: auto;
   user-select: none;
+  object-fit: contain;
 }
 
 .preview {
   display: flex;
-  justify-content: space-between; /* Distribute space evenly between images */
+  justify-content: space-between;
   align-items: center;
   gap: 24px;
+  width: 100%;
+  max-width: 720px; /* Limit the maximum width of the preview container */
 }
 
 .preview img {
@@ -218,6 +221,9 @@ li {
 
 .card img {
   border-radius: 8px;
+  width: 100%; /* Full width for the image within the card */
+  max-width: 100%;
+  height: auto;
 }
 
 .tags {
