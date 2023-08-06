@@ -24,10 +24,6 @@ body {
   gap: 48px;
 }
 
-a {
-  text-decoration: none;
-}
-
 header {
   display: flex;
   flex-direction: row;
@@ -97,8 +93,8 @@ footer {
 }
 
 img {
-  height: 100%;
   width: 100%;
+  height: auto;
 }
 
 img.icon {
@@ -108,23 +104,28 @@ img.icon {
   object-fit: cover;
 }
 
-.📱 {
-  max-width: 240px;
-}
-
-@media (max-width: 768px) {
-  .📱 {
-    width: 100%;
-  }
-}
-
 .preview {
   display: flex;
-  width: clamp(200px, 90%, 720px);
+  max-width: 800px;
+  max-height: auto;
   justify-content: center;
   align-items: flex-start;
   gap: 24px;
-  align-self: stretch;
+}
+
+.png {
+  max-width: 40%;
+  margin: 16px;
+}
+
+@media (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .png {
+    max-width: 90%;
+  }
 }
 
 /* Buttons ======================================= */
