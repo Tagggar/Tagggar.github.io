@@ -93,11 +93,9 @@ footer {
 }
 
 img {
-  max-width: 100%; 
+  width: 100%;
   height: auto;
-  
 }
-
 
 img.icon {
   position: relative;
@@ -108,7 +106,6 @@ img.icon {
 
 .preview {
   display: flex;
-
   max-width: 100%;
   justify-content: center;
   align-items: flex-start;
