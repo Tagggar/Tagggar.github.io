@@ -21,7 +21,7 @@ body {
   /* Center horizontally */
   justify-content: stretch;
   /* Center vertically */
-  gap: 48px;
+  gap: 32px;
 }
 
 header {
@@ -93,7 +93,7 @@ footer {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   user-select: none;
 }
@@ -106,11 +106,14 @@ img.icon {
 
 .preview {
   display: flex;
-  max-width: 100%;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   gap: 24px;
-  overflow: hidden; /* Hide any potential overflow */
+  overflow: hidden;
+}
+.preview img {
+  max-width: 32%; /* Each image takes up one-third of the available width */
+  height: auto;
 }
 
 .png {
