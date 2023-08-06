@@ -94,9 +94,10 @@ footer {
 
 img {
   width: 100%;
+  max-width: 100%;
   height: auto;
+  display: block; /* Ensure images behave as block-level elements */
 }
-
 img.icon {
   position: relative;
   height: 20px;
