@@ -13,11 +13,14 @@ html.maps {
 body {
   width: clamp(200px, 90%, 720px);
   margin: clamp(16px, 4vw, 80px) auto;
+  /* Center content */
   display: flex;
   position: relative;
   flex-direction: column;
   align-items: flex-start;
+  /* Center horizontally */
   justify-content: stretch;
+  /* Center vertically */
   gap: 32px;
 }
 
@@ -88,12 +91,6 @@ footer {
 .photo:hover {
   mix-blend-mode: normal;
 }
-img.icon {
-  position: relative;
-  height: 20px;
-  width: auto;
-  object-fit: contain;
-}
 
 img {
   width: 100%;
@@ -102,28 +99,25 @@ img {
   user-select: none;
   object-fit: contain;
 }
+img.icon {
+  position: relative;
+  height: 20px;
+  width: auto;
+  object-fit: cover;
+}
 
 .preview {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 24px;
-  max-width: 100%;
-  overflow: hidden; /* Prevent horizontal scrolling */
 }
 
 .preview img {
-  flex: 1; /* Each image takes up equal space within the container */
+  width: 32%; /* Each image takes up one-third of the available width */
   max-width: 100%;
   height: auto;
-  object-fit: contain; /* Maintain aspect ratio and fit image within container */
-}
-
-.card img.preview {
-  width: 100%; /* Full width for the image within the card */
-  max-width: 100%;
-  height: auto;
-  object-fit: contain; /* Maintain aspect ratio and fit image within container */
+  object-fit: contain;
 }
 
 .png {
@@ -229,9 +223,6 @@ li {
 
 .card img {
   border-radius: 8px;
-  width: 100%; /* Full width for the image within the card */
-  max-width: 100%;
-  height: auto;
 }
 
 .tags {
