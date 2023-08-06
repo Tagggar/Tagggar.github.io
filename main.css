@@ -111,7 +111,7 @@ img.icon {
   justify-content: center;
   align-items: center;
   gap: 24px;
-  object-fit: contain;
+  object-fit: cover;
 }
 .preview img {
   max-width: 32%; /* Each image takes up one-third of the available width */
