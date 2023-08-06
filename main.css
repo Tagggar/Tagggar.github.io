@@ -93,8 +93,7 @@ footer {
 }
 
 img {
-  width: 100%;
-  max-width: 100vw;
+  width: 100%;  
   height: auto;
   user-select: none;
   object-fit: contain;
@@ -110,8 +109,7 @@ img.icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;
-  object-fit: contain;
+  gap: 24px;  
 }
 
 .preview img {
