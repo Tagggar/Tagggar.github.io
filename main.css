@@ -93,10 +93,9 @@ footer {
 }
 
 img {
-  width: 100%;
   max-width: 100%;
   height: auto;
-  display: block; /* Ensure images behave as block-level elements */
+  user-select: none;
 }
 img.icon {
   position: relative;
@@ -109,7 +108,7 @@ img.icon {
   display: flex;
   max-width: 100%;
   justify-content: center;
-  align-items: flex-start;
+  align-items: start;
   gap: 24px;
   overflow: hidden; /* Hide any potential overflow */
 }
