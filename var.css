@@ -50,6 +50,10 @@
   pointer-events: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* scrollbar 
 :-webkit-scrollbar-thumb {
   background-color: #babac0;
