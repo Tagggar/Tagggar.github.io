@@ -94,6 +94,7 @@ footer {
 
 img {
   width: 100%;
+  max-width: 100vw;
   height: auto;
   user-select: none;
 }
@@ -106,18 +107,14 @@ img.icon {
 
 .preview {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 8px; /* Adjust as needed */
-  overflow: hidden;
   max-width: 100vw;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
 }
-
 .preview img {
-  flex: 1;
-  width: 32%; /* Each image takes up one-third of the available width */
+  max-width: 32%; /* Each image takes up one-third of the available width */
   height: auto;
-  object-fit: cover;
 }
 
 .png {
