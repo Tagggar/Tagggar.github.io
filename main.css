@@ -1,4 +1,8 @@
 /* HTML5 Imports template vs jQuerry */
+html,
+body {
+  overflow-x: hidden;
+}
 
 html.strm {
   background: var(--neod);
@@ -13,14 +17,11 @@ html.maps {
 body {
   width: clamp(200px, 90%, 720px);
   margin: clamp(16px, 4vw, 80px) auto;
-  /* Center content */
   display: flex;
   position: relative;
   flex-direction: column;
   align-items: flex-start;
-  /* Center horizontally */
   justify-content: stretch;
-  /* Center vertically */
   gap: 32px;
 }
 
@@ -81,7 +82,6 @@ footer {
 .photo {
   max-width: 80px;
   max-height: 100%;
-  overflow: hidden;
   object-fit: cover;
   mix-blend-mode: luminosity;
   min-width: 64px;
@@ -91,6 +91,12 @@ footer {
 .photo:hover {
   mix-blend-mode: normal;
 }
+img.icon {
+  position: relative;
+  height: 20px;
+  width: auto;
+  object-fit: contain;
+}
 
 img {
   width: 100%;
@@ -98,12 +104,6 @@ img {
   height: auto;
   user-select: none;
   object-fit: contain;
-}
-img.icon {
-  position: relative;
-  height: 20px;
-  width: auto;
-  object-fit: cover;
 }
 
 .preview {
@@ -219,6 +219,9 @@ li {
 
 .card img {
   border-radius: 8px;
+  width: 100%; /* Full width for the image within the card */
+  max-width: 100%;
+  height: auto;
 }
 
 .tags {
