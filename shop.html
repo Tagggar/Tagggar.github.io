@@ -3,37 +3,44 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hi, I’m Semyon Taggar</title>
+    <title>Disinfector™️ Web Store UX UI case study</title>
+    <meta
+      name="description"
+      content="UX/UI design case study showcase the power of effective design solutions"
+    />
+    <link rel="icon" type="image/png" href="./img/⚡.png" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-      // Load sections using jQuery
+      // Load sections using jQuery //
       $(document).ready(function () {
-        $("#projectsContainer").load("load.html #projects");
+        $("#🔗projects").load("load.html #projects");
         $("#footerContainer").load("load.html footer");
       });
     </script>
+    <script>
+      function scrollToProjects() {
+        document
+          .getElementById("🔗projects")
+          .scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
 
-    <meta
-      name="description"
-      content="Product Designer UX + UI, making the web better by developing clean and super-intuitive products that fulfill the business mission."
-    />
     <link rel="stylesheet" href="./main.css" />
-    <link rel="stylesheet" href="./var.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap"
+      href="https://api.fonts.coollabs.io/css2?family=Rubik:wght@500&display=swap"
     />
   </head>
+
   <body>
     <header>
       <a href="index.html"
         ><button onclick="scrollToProjects()">Home</button></a
       >
-      <nav class="nav home">
+      <nav class="home">
         <button onclick="window.open('https://u24.gov.ua/')">Support</button>
         <button
           class="ua"
-          id="ua"
           onclick="window.open('https://u24.gov.ua/')"
         ></button>
       </nav>
@@ -46,7 +53,7 @@
     </div>
 
     <main>
-      <h1 class="title">Cleen · Web Store</h1>
+      <h1>Disinfector™️ Web Store</h1>
       <p>
         This UX/UI design case study showcase the power of effective design
         solutions. We will fix the conversion rate by leveraging key data and
@@ -64,257 +71,216 @@
     </main>
 
     <section>
-      <h2 class="title">Situation</h2>
-      <p>
-        The client's e-commerce store had a lot of visitors and clicks, but the
-        conversion rate has been dropping for months. The following tasks were
-        set to define and resolve the problems:
-      </p>
-      <li>
-        <img class="icon" src="./img/It.png" />
-        <p>Review the current UX design and user interface usability;</p>
-      </li>
-      <li>
-        <img class="icon" src="./img/It.png" />
-        <p>
+      <h2>Situation</h2>
+      <ul>
+        <li>
+          The client's e-commerce store had a lot of visitors and clicks, but
+          the conversion rate has been dropping for months. The following tasks
+          were set to define and resolve the problems:
+        </li>
+        <li>
+          <img alt="📐" src="./img/📐.png" />
+          Review the current UX (user experience) design and UI (user interface)
+          usability;
+        </li>
+        <li>
+          <img alt="📐" src="./img/📐.png" />
           Conduct user research and analyze customer behavior data to evaluate
           the effectiveness of marketing campaigns;
-        </p>
-      </li>
-      <li>
-        <img class="icon" src="./img/It.png" />
-        <p>Design new UI (user interface) and improve UX (user experience).</p>
-      </li>
+        </li>
+        <li>
+          <img alt="📐" src="./img/📐.png" />
+          Design new UI and improve UX usability.
+        </li>
+      </ul>
     </section>
 
     <section>
-      <h3 class="title">User research, UX research and usability testing</h3>
-      <li>
-        <img class="icon" src="./img/Bad.png" />
-        <p>
+      <h2>User research, UX research and usability testing</h2>
+      <ul>
+        <li>
+          <img alt="🤬" src="./img/🤬.png" />
           <span class="red">28% of customers</span> left the store after adding
           items to the cart;
-        </p>
-      </li>
-      <li>
-        <img class="icon" src="./img/Bad.png" />
-        <p>
+        </li>
+        <li>
+          <img alt="🤬" src="./img/🤬.png" />
           <span class="red">11% of unique visitors left</span> the shop due to
           long page loading;
-        </p>
-      </li>
-      <li>
-        <img class="icon" src="./img/Bad.png" />
-        <p>
+        </li>
+        <li>
+          <img alt="🤬" src="./img/🤬.png" />
           The product's <span class="red">UI was overloaded</span>, which led to
           a <span class="red">broken UX</span>;
-        </p>
-      </li>
-      <li>
-        <img class="icon" src="./img/Bad.png" />
-        <p>
+        </li>
+        <li>
+          <img alt="🤬" src="./img/🤬.png" />
           Non-intuitive interactions forced users to take actions by trial and
           error, trying to complete their tasks;
-        </p>
-      </li>
+        </li>
+      </ul>
     </section>
 
     <section>
-      <h4 class="title">Data analysis</h4>
-      <p>
-        Confusing first impressions, outdated UX & UI performance with slow
-        loading - caused frustration and customer outflow. Previous UI is under
-        NDA, but data is open:
-      </p>
-      <li>
-        <img class="icon" src="./img/Charts.png" />
-        <p>
+      <h2>Data analysis</h2>
+      <ul>
+        <li>
+          Confusing first impressions, outdated UX & UI performance with slow
+          loading - caused frustration and customer outflow. Previous UI is
+          under NDA, but data is open:
+        </li>
+        <li>
+          <img alt="📈" src="./img/📈.png" />
           <span class="red">Conversions dropped</span> for over 9 months despite
           <span>accurate pricing</span> for the target audience;
-        </p>
-      </li>
-      <li>
-        <img class="icon" src="./img/Invader.png" />
-        <p>
+        </li>
+        <li>
+          <img alt="👾" src="./img/👾.png" />
           Unoptimized UI elements with heavy scripts
           <span class="red">reduced performance</span> and made navigation
           difficult;
-        </p>
-      </li>
-      <li>
-        <img class="icon" src="./img/Ads.png" />
-        <p>
+        </li>
+        <li>
+          <img alt="📢" src="./img/📢.png" />
           Annoying pop-ups and notifications drove away
           <span class="red">22%</span> of customers.
-        </p>
-      </li>
+        </li>
+      </ul>
     </section>
 
     <section>
-      <h5 class="title">Prototyping and Final Design</h5>
-      <li>
-        <p>
+      <h2>Prototyping and Final Design</h2>
+      <ul>
+        <li>
           The solution emerges from data research: to develop a clean,
           functional, and lightweight UI/UX design for an enjoyable marketplace
           experience.
-        </p>
-      </li>
-      <p>
-        After feedback on Figma prototypes, I created the final design of the
-        lightest version. Below, I will showcase some pages with a simple but
-        functional UI with intuitive UX.
-      </p>
+        </li>
+        <li>
+          After feedback on Figma prototypes, I created the final design of the
+          lightest version. Below, I will showcase some pages with new simple
+          UI.
+        </li>
+      </ul>
     </section>
 
-    <section>
-      <section class="row">
-        <section class="png">
-          <img src="./img/shop_ios_products.png" />
-        </section>
-        <section>
-          <h6 class="title">Products</h6>
+    <section class="row">
+      <img class="png" src="./img/shop_ios_products.png" />
+      <section>
+        <h3>Products</h3>
+        <ul>
           <li>
-            <p>
-              Main Page with infinite scroll. Nothing more, the products occupy
-              the whole screen. Nice!
-            </p>
+            Main Page with infinite scroll. Nothing more, the products occupy
+            the whole screen. Nice!
           </li>
-
-          <img class="icon" style="height: 24px" src="./img/Search.svg" />
-
-          <p>
+          <img alt="search" style="height: 3.2rem" src="./img/search.svg" />
+          <li>
             Search hides on scroll <span class="red">down</span> and reappears
             on scroll <span>up</span>;
-          </p>
-          <li>
-            <img class="icon" src="./img/It.png" />
-            <p>
-              Logic-based navigation through gestures and browser controls - no
-              need for an additional UI;
-            </p>
-          </li>
-
-          <li>
-            <img class="icon" src="./img/Ads.png" />
-            <p>
-              Ads can be natively placed as items - so users won't be annoyed by
-              pop-ups;
-            </p>
           </li>
           <li>
-            <img class="icon" src="./img/Profit.png" />
-            <p>Zero distraction, only shopping.</p>
-          </li>
-        </section>
-      </section>
-    </section>
-
-    <section>
-      <section class="row">
-        <section class="png">
-          <img src="./img/shop_ios_item.png" />
-        </section>
-        <section>
-          <h7 class="title">Product Page</h7>
-          <li>
-            <p>
-              Choose product options, read reviews, and view special offers.
-            </p>
+            <img alt="👉" src="./img/👉.png" />
+            Logic-based navigation through gestures and browser controls - no
+            need for an additional UI;
           </li>
           <li>
-            <img class="icon" src="./img/Thumbs.png" />
-            <p>
-              Legit Reviews: customers invited to review purchased items after
-              one week;
-            </p>
+            <img alt="📢" src="./img/📢.png" />
+            Ads can be natively placed as items - so users won't be annoyed by
+            pop-ups;
           </li>
           <li>
-            <img class="icon" src="./img/Ai.png" />
-            <p>
-              AI-optimized product photos provide high quality presentation in
-              under <span>90KB</span> per image;
-            </p>
+            <img alt="🤑" src="./img/🤑.png" />
+            Zero distraction, only shopping.
           </li>
-          <li>
-            <img class="icon" src="./img/Lightning.png" />
-            <p>
-              Lightning-fast loading - with an input delay of under
-              <span>100ms</span>, the page content loads in <span>2.5sec</span>;
-            </p>
-          </li>
-          <li>
-            <img class="icon" src="./img/Lightning.png" />
-            <p>
-              I've greatly optimized UI code to score <span>92 points</span> on
-              Google PageSpeed and get to the <span>green</span> zone in
-              Google's Core Web Vitals rating system.
-            </p>
-          </li>
-        </section>
+        </ul>
       </section>
     </section>
 
     <section class="row">
-      <section class="png">
-        <img src="./img/shop_ios_cart.png" />
-      </section>
-
+      <img class="png" src="./img/shop_ios_item.png" />
       <section>
-        <h8 class="title">Cart</h8>
-        <li>
-          <p>Users can easily search, evaluate and manage items:</p>
-        </li>
+        <h3>Product Page</h3>
+        <ul>
+          <li>
+            Choose product options, read reviews, and view special offers.
+          </li>
+          <li>
+            <img alt="👍" src="./img/👍.png" />
+            Legit Reviews: customers invited to review purchased items after one
+            week;
+          </li>
+          <li>
+            <img alt="👌" src="./img/👌.png" />
+            AI-optimized product photos provide high quality presentation in
+            under <span>90KB</span> per image;
+          </li>
+          <li>
+            <img alt="⚡" src="./img/⚡.png" />
+            Lightning-fast loading - with an input delay of under
+            <span>100ms</span>, the page content loads in <span>2.5sec</span>;
+          </li>
+          <li>
+            <img alt="⚡" src="./img/⚡.png" />
+            I've greatly optimized UI code to score <span>92</span> points on
+            Google PageSpeed and get to the <span>green</span> zone in Google's
+            Core Web Vitals rating system.
+          </li>
+        </ul>
+      </section>
+    </section>
 
-        <img class="icon" style="height: 24px" src="./img/Search.svg" />
-        <li>
-          <p>
+    <section class="row">
+      <img class="png" src="./img/shop_ios_cart.png" />
+      <section>
+        <h3>Cart</h3>
+        <ul>
+          <li>Users can easily search, evaluate and manage items:</li>
+          <img alt="search" style="height: 24px" src="./img/search.svg" />
+          <li>
             More than <span>70%</span> of shoppers searched for items from the
             cart page directly;
-          </p>
-        </li>
-        <li>
-          <img class="icon" src="./img/It.png" />
-          <p>
-            Very important page. No crazy menu, lists and buttons. It must be
-            intuitively clear, or Your customers will get mad.
-          </p>
-        </li>
-        <li>
-          <img class="icon" src="./img/Ok.png" />
-          <p>
+          </li>
+          <li>
+            <img alt="🙃" src="./img/🙃.png" />
+            Very important page. No crazy menu, lists and buttons. Cart must be
+            intuitively simple, or Your customers will get mad;
+          </li>
+          <li>
+            <img alt="👍" src="./img/👍.png" />
             The related products list also works well here - about
             <span>5%</span> of customers added suggested items to the cart at
             checkout;
-          </p>
-        </li>
-        <li>
-          <img class="icon" src="./img/Profit.png" />
-          <p>
+          </li>
+          <li>
+            <img alt="🤑" src="./img/🤑.png" />
             Search from the cart is very effective user-oriented functional
-            element that <span>boosted conversion by 18%</span>.
-          </p>
-        </li>
+            element that boosted conversion by <span>18%</span>.
+          </li>
+        </ul>
       </section>
     </section>
 
     <section>
-      <h9 class="title">Summary</h9>
-      <li>
-        <p>
+      <h2>Summary</h2>
+      <ul>
+        <li>
           The customers have limited battery and limited shopping time. So the
           store probably, does not need that heavy effects, distracting banners
           and nasty animations.
-        </p>
-      </li>
-      <li>
-        <p>
+        </li>
+        <li>
           Instant loading, clean and user-centric UX/UI design have profound
           impact on the success of a digital product. Make the shopping
           experience enjoyable and don't disturb customers from buying.
-        </p>
-      </li>
+        </li>
+      </ul>
     </section>
-    <div id="projectsContainer"></div>
+
+    <section>
+      <h2>Other projects:</h2>
+      <div id="🔗projects"></div>
+    </section>
+
     <div id="footerContainer"></div>
   </body>
 </html>

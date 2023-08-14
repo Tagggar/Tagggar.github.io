@@ -6,29 +6,29 @@
     <title>Hi, I’m Semyon Taggar</title>
     <meta
       name="description"
-      content="Product Designer UX + UI, making the web better by developing clean and super-intuitive products that fulfill the business mission."
+      content="a Product Designer, making the web better by developing clean UI and super-intuitive UX to fulfill the business mission."
     />
+    <link rel="icon" type="image/png" href="./img/⚡.png" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-      // Load sections using jQuery
+      // Load sections using jQuery //
       $(document).ready(function () {
-        $("#projectsContainer").load("load.html #projects");
+        $("#🔗projects").load("load.html #projects");
         $("#footerContainer").load("load.html footer");
       });
     </script>
     <script>
       function scrollToProjects() {
         document
-          .getElementById("projectsContainer")
+          .getElementById("🔗projects")
           .scrollIntoView({ behavior: "smooth" });
       }
     </script>
 
     <link rel="stylesheet" href="./main.css" />
-    <link rel="stylesheet" href="./var.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap"
+      href="https://api.fonts.coollabs.io/css2?family=Rubik:wght@500&display=swap"
     />
   </head>
 
@@ -36,116 +36,115 @@
     <header>
       <img
         class="photo"
-        alt=""
+        alt="Smiling Face with Sunglasses"
         src="./img/Photo.png"
         onclick="window.open('https://t.me/Tagggar');"
       />
       <nav>
-        <button onclick="window.location.href = 'mailto:taggarx@gmail.com'">
+        <button
+          class="email"
+          onclick="window.location.href = 'mailto:taggarx@gmail.com'"
+        >
           Email
         </button>
-        <button onclick="window.open('https://t.me/Tagggar')">Chat</button>
-        <button onclick="scrollToProjects()">Projects</button>
-        <button onclick="window.open('https://dribbble.com/shots')">
-          Dribbble
+        <button class="tg" onclick="window.open('https://t.me/Tagggar')">
+          Telegram
         </button>
+
+        <button onclick="scrollToProjects()">Projects</button>
         <button onclick="window.open('https://u24.gov.ua/')">Support</button>
         <button
           class="ua"
-          id="ua"
           onclick="window.open('https://u24.gov.ua/')"
         ></button>
       </nav>
     </header>
 
     <main>
-      <h1 class="title">Hi, I’m Semyon Taggar</h1>
+      <h1>Hi, I’m Semyon Taggar</h1>
       <p>
         I'm a <span>Product Designer</span>, making the web better by developing
-        <span>clean UI</span> and super-intuitive <span>UX design</span> to
-        fulfill the business mission.
+        clean <span class="red">UI</span> and super-intuitive
+        <span class="red">UX</span> to fulfill the business mission.
       </p>
     </main>
 
     <section>
-      <h2 class="title">Skills:</h2>
-      <li>
-        <img class="icon" alt="" src="./img/Brain.png" />
-        <p>
+      <h2>Skills:</h2>
+      <ul>
+        <li>
+          <img alt="🧠" src="./img/🧠.png" />
           Scientific UX/UI design based on business data, cognitive psychology,
           anthropology, and rationality;
-        </p>
-      </li>
-      <li>
-        <img class="icon" alt="" src="./img/Lightning.png" />
-        <p>Experience in catchy design techniques and web standards;</p>
-      </li>
-      <li>
-        <img class="icon" alt="" src="./img/Invader.png" />
-        <p>User research and usability testing.</p>
-      </li>
-      <!-- Add items -->
+        </li>
+        <li>
+          <img alt="⚡" src="./img/⚡.png" />
+          Figma, HTML, CSS, SCSS, JS, Blender, Zettelkasten;
+        </li>
+        <li>
+          <img alt="⚡" src="./img/⚡.png" />
+          Experience in catchy design techniques and web standards;
+        </li>
+        <li>
+          <img alt="👾" src="./img/👾.png" />
+          User research and usability testing.
+        </li>
+      </ul>
     </section>
 
     <section>
-      <h3 class="title">Developing:</h3>
-      <li>
-        <img class="icon" alt="" src="./img/Gem.png" />
-        <p>
+      <h2>Developing:</h2>
+      <ul>
+        <li>
+          <img alt="💎" src="./img/💎.png" />
           Unique <span>mobile</span> / <span>desktop</span> /
           <span>web apps</span>;
-        </p>
-      </li>
-      <li>
-        <img class="icon" alt="" src="./img/Ok.png" />
-        <p>Pixel-perfect, clean UI and intuitive UX design;</p>
-      </li>
-      <li>
-        <img class="icon" alt="" src="./img/Thumbs.png" />
-        <p>Original assets;</p>
-      </li>
-      <li>
-        <img class="icon" alt="" src="./img/Cookie.png" />
-        <p>Cookie pop-ups that users don't hate;</p>
-      </li>
-      <li>
-        <img class="icon" alt="" src="./img/Face.png" />
-        <p>
+        </li>
+        <li>
+          <img alt="👌" src="./img/👌.png" />
+          Pixel-perfect, clean UI and intuitive UX designs;
+        </li>
+        <li><img alt="👍" src="./img/👍.png" /> Original assets;</li>
+        <li>
+          <img alt="🍪" src="./img/🍪.png" />
+          Cookie pop-ups that users don't hate;
+        </li>
+        <li>
+          <img alt="🙃" src="./img/🙃.png" />
           Interactive prototypes that represent user experience of the final
           product;
-        </p>
-      </li>
-      <li>
-        <img class="icon" alt="" src="./img/Box.png" />
-        <p>
-          Complete product design cycle – including physical and technical
-          feasibility, legal aspects, production, branding, and packaging.
-        </p>
-      </li>
-      <!-- Add items -->
+        </li>
+        <li>
+          <img alt="📦" src="./img/📦.png" />
+          Complete physical and digital products design cycle – including
+          technical feasibility, legal aspects, production, branding, and
+          packaging.
+        </li>
+      </ul>
     </section>
 
-    <div id="projectsContainer"></div>
+    <section>
+      <h2>Projects:</h2>
+      <div id="🔗projects"></div>
+    </section>
 
     <section>
-      <h5 class="title">Development Stages:</h5>
-      <li>
-        <span style="opacity: 0.5">10%</span>
-        <p>Briefing</p>
-      </li>
-      <li>
-        <span style="opacity: 0.6">50%</span>
-        <p>Business research: market, goals and users</p>
-      </li>
-      <li>
-        <span style="opacity: 0.7">70%</span>
-        <p>Prototyping and MVP testing</p>
-      </li>
-      <li>
-        <span style="opacity: 0.9">90%</span>
-        <p>Final design development and support</p>
-      </li>
-      <!-- Add items -->
+      <h2>Development Stages:</h2>
+      <ul>
+        <li><span style="opacity: 0.5">10%</span> &nbsp Briefing</li>
+        <li>
+          <span style="opacity: 0.6">50%</span> &nbsp Business research: market
+          / users / goals
+        </li>
+        <li>
+          <span style="opacity: 0.7">70%</span> &nbsp Prototyping and MVP
+          testing
+        </li>
+        <li>
+          <span style="opacity: 0.9">90%</span> &nbsp Final design development
+          and support
+        </li>
+      </ul>
     </section>
 
     <div id="footerContainer"></div>
