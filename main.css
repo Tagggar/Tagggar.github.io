@@ -84,19 +84,9 @@ header {
   flex-wrap: wrap;
 }
 
-.png {
-  max-width: 32%;
-  height: auto;
-  margin: 2rem;
-}
-
 .col,
 .row {
-  gap: 2.4rem;
-}
-
-#projects {
-  margin: 2.4rem -1.6rem;
+  gap: var(--16);
 }
 
 section,
@@ -289,6 +279,12 @@ footer button:not(.ua) {
   background: #ffc6dd;
 }
 
+.png {
+  max-width: 32%;
+  height: auto;
+  margin: 2rem;
+}
+
 .preview {
   display: flex; /* Use flexbox for horizontal layout */
   align-items: center; /* Vertically align images */
@@ -305,6 +301,12 @@ span.red {
   color: #e30000;
   background-color: #fecae3;
   mix-blend-mode: hard-light;
+}
+
+@media (min-width: 600px) {
+  #projects {
+    margin: 1.6rem -1.6rem;
+  }
 }
 
 @media (max-width: 480px) {
