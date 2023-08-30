@@ -13,7 +13,15 @@
   --grey: #c5c5c5;
   --green: #20c05f;
   --green-1: #daebdf;
-  --green-9: #00574a;
+  --green-9: #00575a;
+  --indigo: #25084b;
+  --neon: linear-gradient(70deg, #3b005f, #4a00d8);
+  --neod: linear-gradient(#210036, #240068);
+}
+
+::selection {
+  color: black;
+  background: pink;
 }
 
 *,
@@ -60,7 +68,7 @@ nav,
 footer {
   display: flex;
   align-items: flex-end;
-  gap: var(--16);
+  gap: var(--24);
 }
 
 nav,
@@ -153,10 +161,6 @@ button:hover,
   background: url(./img/ua.png) no-repeat center / cover;
 }
 
-footer button:not(.ua) {
-  opacity: 0.7;
-}
-
 .email,
 .tg {
   background: var(--dark);
@@ -212,7 +216,6 @@ footer button:not(.ua) {
 .tags {
   gap: 0.8rem;
   display: flex;
-
   flex-wrap: wrap;
 }
 
@@ -255,21 +258,27 @@ footer button:not(.ua) {
   background: #004846;
 }
 
-/*  STRM  ----------------------------*/
-html.strm {
+/*  ui  ----------------------------*/
+html.ui {
   background: var(--neod);
 }
-.strm {
-  color: #9b8dff;
-  background: linear-gradient(70deg, #3b005f, #4a00d8);
+.ui {
+  color: #8da8ff;
+  background: var(--neon);
 }
-.strm .title {
+.ui .title {
   color: #762dff;
 }
-.strm span,
-.strm.card span {
+
+.ui button {
+  color: #66babe;
+  background-color: #3f0f96;
+}
+
+.ui span,
+.ui.card span {
   color: #ff7700;
-  background: #762dff79;
+  background-color: #762dff79;
 }
 
 /*  FF  ----------------------------*/
@@ -286,7 +295,7 @@ html.strm {
 
 .preview {
   display: flex; /* Use flexbox for horizontal layout */
-  gap: 1.6rem;
+  gap: 2.4rem;
   align-items: center; /* Vertically align images */
   justify-content: space-between; /* Distribute space evenly between images */
 }
