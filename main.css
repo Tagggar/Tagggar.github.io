@@ -284,13 +284,13 @@ html.ui {
 /*  FF  ----------------------------*/
 
 .ff {
-  color: rebeccapurple;
-  background: linear-gradient(70deg, #e3b3d4, #faaca8);
+  color: #4f009f;
+  background: linear-gradient(70deg, #c4bdc3, #b8b8b8);
 }
 .ff span,
 .ff.card span {
-  color: #de82c1;
-  background: #ffc6dd;
+  color: #000;
+  background: #90909090;
 }
 
 .preview {
